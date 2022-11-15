@@ -144,6 +144,10 @@ body {
   text-decoration: none; 
 }
 
+.info-title-link, .author a {
+  transition: color 0.5s ease-out;
+}
+
 .info-title-link:active, .author a:active {
   color: var(--cyan);
 }
@@ -161,6 +165,7 @@ body {
   .info-image-link, .info-image-link img {
     width: 303px;
     height: 303px;
+    transition: opacity 0.5s ease-out;
   }
 
   .info-image-link:hover {
