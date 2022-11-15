@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --border: hsla(215, 51%, 70%, 0.2);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg);
+  color: var(--soft-blue);
+}
+
+.container {
+  width: 327px;
+  height: 543px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--card-bg);
+  border-radius: 10px;
+}
+
+.information, .author {
+  width: 278px;
+}
+
+.info-image-link {
+  width: 278px;
+  height: 278px;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.info-image-link:active {
+  background-color: var(--cyan);
+  background-image: url('./images/icon-view.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info-image-link:active img {
+  opacity: 15%;
+}
+
+.info-image-link img {
+  width: 278px;
+  height: 278px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.information h1 a {
+  display: block;
+  color: var(--white);
+  text-align: start;
+  font-size: 20px;
+  margin-bottom: 15px;
+  letter-spacing: .5px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.information p {
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.plan span {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.plan img {
+  margin-right: 5px;
+}
+
+.price, .duration {
+  display: flex;
+  align-items: center;
+}
+
+.price span {
+  color: var(--cyan);
+  font-weight: 600;
+}
+
+.author {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.author img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  border: 1px solid var(--white);
+  margin-right: 15px;
+}
+
+.author span {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.author span a {
+  color: var(--white);
+  text-decoration: none; 
+}
+
+.info-title-link:active, .author a:active {
+  color: var(--cyan);
+}
