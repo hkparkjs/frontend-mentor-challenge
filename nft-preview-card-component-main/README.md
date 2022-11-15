@@ -71,7 +71,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [MDN - Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) - This helped me for setting smoothly transition effect when user over the mouse on pictures and links.
+- [MDN - Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) - This helped me for setting smoothly transition effect when user over the mouse on links.
 
 ## Author
 
