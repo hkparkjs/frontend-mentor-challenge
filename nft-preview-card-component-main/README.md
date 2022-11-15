@@ -72,6 +72,7 @@ Users should be able to:
 ### Useful resources
 
 - [MDN - Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) - This helped me for setting smoothly transition effect when user over the mouse on links.
+- [MDN - Transition timing function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) - This is an article which helped me understand transition easing functions.
 
 ## Author
 
