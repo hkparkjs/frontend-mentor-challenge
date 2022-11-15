@@ -11,6 +11,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -44,19 +45,33 @@ Users should be able to:
 ### What I learned
 
 - How to set background color and image when user over the mouse on image
-
 ```css
 .info-image-link:hover {
-    background-color: var(--cyan);
-    background-image: url('./images/icon-view.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  background-color: var(--cyan);
+  background-image: url('./images/icon-view.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
   
-  .info-image-link:hover img {
-    opacity: 15%;
-  }
+.info-image-link:hover img {
+  opacity: 15%;
+}
   ```
+
+- How to set transition on link
+```css
+.info-title-link, .author a {
+  transition: color 0.5s ease-out; /* set transition */
+}
+
+.info-title-link:hover, .author a:hover {
+  color: var(--cyan);
+}
+```
+
+### Useful resources
+
+- [MDN - Transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) - This helped me for setting smoothly transition effect when user over the mouse on pictures and links.
 
 ## Author
 
