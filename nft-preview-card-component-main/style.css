@@ -101,6 +101,7 @@ body {
 .plan span {
   font-weight: 300;
   font-size: 14px;
+  letter-spacing: .5px;
 }
 
 .plan img {
@@ -135,6 +136,7 @@ body {
 .author span {
   font-weight: 300;
   font-size: 14px;
+  letter-spacing: .5px;
 }
 
 .author span a {
@@ -144,4 +146,44 @@ body {
 
 .info-title-link:active, .author a:active {
   color: var(--cyan);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 350px;
+    height: 596px;
+  }
+
+  .information, .author {
+    width: 303px;
+  }
+
+  .info-image-link, .info-image-link img {
+    width: 303px;
+    height: 303px;
+  }
+
+  .info-image-link:hover {
+    background-color: var(--cyan);
+    background-image: url('./images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .info-image-link:hover img {
+    opacity: 15%;
+  }
+  
+
+  .information p {
+    font-size: 18px;
+  }
+  
+  .plan span {
+    font-size: 14px;
+  }
+
+  .info-title-link:hover, .author a:hover {
+    color: var(--cyan);
+  }
 }
