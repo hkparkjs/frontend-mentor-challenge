@@ -119,3 +119,35 @@ html, body {
   color: var(--very-light-gray);
   background-color: var(--very-dark-cyan);
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 920px;
+    height: 500px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .car-info {
+    width: 307px;
+    height: 500px;
+  }
+
+  .car-description {
+    width: 212px;
+    margin-bottom: 70px;
+  }
+
+  .sedans a:hover {
+    color: var(--very-light-gray);
+    background-color: var(--bright-orange);
+  }
+
+  .suvs a:hover {
+    color: var(--very-light-gray);
+    background-color: var(--dark-cyan);
+  }
+
+  .luxury a:hover {
+    color: var(--very-light-gray);
+    background-color: var(--very-dark-cyan);
+  }  
+}
