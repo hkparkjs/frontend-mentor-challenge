@@ -75,9 +75,9 @@ body {
 .function-item p {
   text-align: start;
   font-size: 13px;
-    line-height: 1.7em;
-    width: 248px;
-    margin-bottom: 30px;
+  line-height: 1.7em;
+  width: 248px;
+  margin-bottom: 30px;
 }
 
 .function-item img {
@@ -99,4 +99,58 @@ body {
 
 .calculator {
   border-top: 3px solid var(--blue);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-top: 0;
+  }
+  .container h1 {
+    font-size: 36px;
+    width: 438px;
+    margin: 0;
+  }
+  .container p {
+    font-size: 15px;
+    width: 533px;
+  }
+  .function {
+    display: grid;
+    width: 1110px;
+    height: 530px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    position: relative;
+    margin-top: 45px;
+  }
+  .function-item {
+    width: 290px;
+    height: 200px;
+    margin-bottom: 0;
+    padding: 30px;
+  }
+  .function-item h2 {
+    margin-bottom: 10px;
+  }
+  .function-item p {
+    text-align: start;
+    font-size: 13px;
+    line-height: 1.9em;
+    width: 260px;
+    margin-bottom: 50px;
+  }
+  .team-builder, .karma {
+    grid-column: 2 / 3;
+  }
+
+  .supervisor {
+    position: absolute;
+    top: 140px;
+  }
+
+  .calculator {
+    position: absolute;
+    top: 140px;
+    right: 0;
+  }
 }
