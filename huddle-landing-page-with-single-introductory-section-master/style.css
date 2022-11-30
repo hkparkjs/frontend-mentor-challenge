@@ -82,6 +82,7 @@ header img {
   border-radius: 30px;
   background-color: var(--white);
   font-family: 'Poppins', sans-serif;
+  color: var(--violet);
   font-size: 12px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-bottom: 30px;
