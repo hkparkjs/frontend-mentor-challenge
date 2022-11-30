@@ -94,7 +94,7 @@ header img {
 
 .socialmedia {
   display: flex;
-  margin-bottom: 30px auto;
+  margin: 30px auto;
 }
 
 .socialmedia a {
@@ -113,4 +113,79 @@ header img {
 .socialmedia a:active {
   color: var(--soft-magenta);
   border: 1px solid var(--soft-magenta);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    background-image: url('./images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    width: 1090px;
+    height: 620px;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header img {
+    width: 200px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+  }
+
+  .content img {
+    width: 600px;
+    margin-bottom: 50px;
+  }
+
+  .description {
+    padding-left: 35px;
+    align-items: start;
+  }
+
+  .description h1 {
+    width: 379px;
+    font-size: 28px;
+    padding-top: 30px;
+  }
+
+  .description p {
+    width: 454px;
+  }
+
+  .btn-register {
+    width: 155px;
+    padding: 12px 30px;
+    text-align: center;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-register:hover {
+    color: var(--white);
+    background-color:var(--soft-magenta);
+  }
+
+  .socialmedia {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .socialmedia a {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .socialmedia a:hover {
+    color: var(--soft-magenta);
+    border: 1px solid var(--soft-magenta);
+  }
 }
