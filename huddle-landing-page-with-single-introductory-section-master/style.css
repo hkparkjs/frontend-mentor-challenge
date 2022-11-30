@@ -1,0 +1,116 @@
+@charset 'utf-8';
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--white);
+  background-color: var(--violet);
+  background-image: url('./images/bg-mobile.svg');
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+header img {
+  width: 150px;
+}
+
+.content img {
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.content {
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description h1 {
+  width: 300px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+
+.description p {
+  width: 300px;
+  line-height: 1.6em;
+  margin-bottom: 25px;
+}
+
+.btn-register {
+  width: 200px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 30px;
+}
+
+.btn-register:active {
+  color: var(--white);
+  background-color:var(--soft-magenta);
+}
+
+.socialmedia {
+  display: flex;
+  margin-bottom: 30px auto;
+}
+
+.socialmedia a {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 12px;
+}
+
+.socialmedia a:active {
+  color: var(--soft-magenta);
+  border: 1px solid var(--soft-magenta);
+}
