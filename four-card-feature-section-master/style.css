@@ -21,7 +21,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: var(--very-light-gray);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+  color: var(--very-dark-blue);
+}
+
+header p {
+  width: 312px;
+  color: var(--grayish-blue);
+  text-align: center;
 }
 
 .container {
@@ -30,20 +52,10 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 60px;
-}
-
-.container h1 {
-  font-size: 24px;
-  font-weight: 200;
-  text-align: center;
-  color: var(--very-dark-blue);
 }
 
 .container p {
-  width: 312px;
   color: var(--grayish-blue);
-  text-align: center;
 }
 
 .function {
@@ -105,15 +117,22 @@ body {
   .container {
     margin-top: 0;
   }
-  .container h1 {
+
+  .container p {
+    color: var(--grayish-blue);
+  }
+
+  header h1 {
     font-size: 36px;
     width: 438px;
     margin: 0;
   }
-  .container p {
+
+  header p {
     font-size: 15px;
     width: 533px;
   }
+
   .function {
     display: grid;
     width: 1110px;
@@ -123,15 +142,18 @@ body {
     position: relative;
     margin-top: 45px;
   }
+
   .function-item {
     width: 290px;
     height: 200px;
     margin-bottom: 0;
     padding: 30px;
   }
+
   .function-item h2 {
     margin-bottom: 10px;
   }
+
   .function-item p {
     text-align: start;
     font-size: 13px;
@@ -139,6 +161,7 @@ body {
     width: 260px;
     margin-bottom: 50px;
   }
+
   .team-builder, .karma {
     grid-column: 2 / 3;
   }
