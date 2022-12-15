@@ -1,16 +1,13 @@
 const popup = document.querySelector('.popup-share-box');
 const shareBtn = document.querySelector('.share');
 const popupShareBtn = document.querySelector('.article-footer button');
-console.log()
 let isShow = false;
 
 function adjustPopupLocation() {
   popup.style.top = `${shareBtn.getBoundingClientRect().top - 85}px`;
   popup.style.left = `${shareBtn.getBoundingClientRect().left - 105}px`;
 }
-popup.addEventListener('toggle', () => {
-  console.log("togg")
-});
+
 shareBtn.addEventListener('click', () => {
   if (!isShow) {
     popup.style.display = "flex";
