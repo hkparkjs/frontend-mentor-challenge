@@ -161,3 +161,72 @@ html, body {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    width: 731px;
+    height: 280px;
+  }
+
+  .header-img {
+    width: 285px;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  
+  .description {
+    padding-left: 23px;
+    width: 340px;
+  }
+
+  .description h1 {
+    font-size: 20px;
+  }
+
+  .description p {
+    width: 380px;
+  }
+
+  .article-footer {
+    width: 390px;
+  }
+
+  .popup-share-box {
+    position: fixed;
+    top: 643px;
+    right: 410px;
+    background: var(--very-dark-grayish-blue);
+    border-radius: .4em;
+    width: 248px;
+    height: 55px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  /* speech bubble popup */
+  .popup-share-box:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: var(--very-dark-grayish-blue);
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -20px;
+  }
+
+  .popup-share-content {
+    justify-content: center;
+  }
+
+  .popup-share-content .share-dark {
+    display: none;
+  }
+
+  .sns > button:last-child .icon-sns {
+    margin-right: 0;
+  }
+}
