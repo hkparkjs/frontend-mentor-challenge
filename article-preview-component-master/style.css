@@ -149,10 +149,12 @@ html, body {
 
 .popup-share-box .label {
   color: var(--grayish-blue);
-  font-size: 15px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.4em;
   margin-right: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .popup-share-content {
@@ -168,6 +170,11 @@ html, body {
 }
 
 .sns {
+  display: flex;
+  justify-content: center;
+}
+
+.sns a {
   display: flex;
   justify-content: center;
 }
@@ -239,7 +246,7 @@ html, body {
     display: none;
   }
 
-  .sns > button:last-child .icon-sns {
+  .sns > a:last-child .icon-sns {
     margin-right: 0;
   }
 }
