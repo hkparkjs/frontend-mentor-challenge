@@ -15,16 +15,17 @@
 }
 
 .share {
-  display: block;
-  padding: 9px 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
-}
-
-.share-light {
   background-color:var(--light-grayish-blue);
 }
 
-.share-dark {
+.share.active {
+  z-index: 30;
   background-color: var(--grayish-blue);
 }
 
@@ -53,8 +54,8 @@ html, body {
   height: 512px;
   background-color: white;
   border-radius: 10px;
-  overflow: hidden;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -93,6 +94,7 @@ html, body {
 .article-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .article-footer img {
@@ -107,6 +109,7 @@ html, body {
 .description {
   width: 283px;
 }
+
 .profile {
   display: flex;
   flex-direction: column;
@@ -126,7 +129,7 @@ html, body {
 }
 
 .popup-share-box {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 20;
@@ -135,6 +138,13 @@ html, body {
   position: absolute;
   bottom: 0;
   background-color: var(--very-dark-grayish-blue);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup-share-box.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .popup-share-box .label {
@@ -165,6 +175,7 @@ html, body {
 @media screen and (min-width: 768px) {
   .container {
     flex-direction: row;
+    overflow: visible;
     width: 731px;
     height: 280px;
   }
@@ -173,6 +184,7 @@ html, body {
     width: 285px;
     height: 100%;
     margin-bottom: 0;
+    border-radius: 10px 0 0 10px;
   }
   
   .description {
@@ -193,9 +205,10 @@ html, body {
   }
 
   .popup-share-box {
-    position: fixed;
-    top: 643px;
-    right: 410px;
+    position: absolute;
+    left: 560px;
+    bottom: 90px;
+    overflow: visible;
     background: var(--very-dark-grayish-blue);
     border-radius: .4em;
     width: 248px;
