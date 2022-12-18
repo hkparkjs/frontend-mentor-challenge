@@ -11,7 +11,6 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 ## Overview
 
@@ -41,32 +40,15 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - Javascript
 
 ### What I learned
-While adding share popup for desktop screen, I learned how to get the current location of some element and the width of browser.
- - getBoundingClientRect()
- - resize event 
-```js
-/* Adjusting location after knowing location of specific element */
-function adjustPopupLocation() {
-  popup.style.top = `${shareBtn.getBoundingClientRect().top - 85}px`;
-  popup.style.left = `${shareBtn.getBoundingClientRect().left - 105}px`;
-}
-...
-/* Adjusting location whenever changine browser size */
-window.addEventListener('resize', () => {
-  if (isShow && screen.width >= 768) {  // only for desktop
-    adjustPopupLocation();
-  }
-});
-```
-### Useful resources
 
-- [MDN - Element.getBoundingClientRect()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
-- [MDN - resize event](https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event)
+- At first, I used javascript ```getBoundingClientRect()``` and ```resize``` event to locate popup on mobile and desktop but I learned that I should use media queries to adjust screen size.
+- I used visibility and opacity property to show/hide popup.
+- I used z-index property to bring the share button on top.
+- In case of desktop, I used border-radius property on picture instead of using overflow hidden. 
 
 ## Author
 
