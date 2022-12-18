@@ -50,7 +50,8 @@ html, body {
 
 .container {
   position: relative;
-  width: 327px;
+  width: 100%;
+  max-width: 327px;
   height: 512px;
   background-color: white;
   border-radius: 10px;
@@ -183,7 +184,8 @@ html, body {
   .container {
     flex-direction: row;
     overflow: visible;
-    width: 731px;
+    width: 100%;
+    max-width: 731px;
     height: 280px;
   }
 
