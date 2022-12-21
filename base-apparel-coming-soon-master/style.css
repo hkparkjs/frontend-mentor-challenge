@@ -133,3 +133,66 @@ header img {
   padding-left: 1.25rem;
   font-size: 0.75rem;
 }
+
+@media screen and (min-width: 768px) {
+  html, body {
+    background-image: url('./images/bg-pattern-desktop.svg');
+  }
+
+  header {
+    display: grid;
+    max-width: 50%;
+    padding-left: 10.375rem;
+  }
+
+  header img {
+    width: 157px;
+    height: 31px;
+  }
+
+  .header-img {
+    margin-bottom: 0;
+    margin-top: 41.5625rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 136px 456px 208px;
+    max-width: 1440px;
+  }
+
+  .content-txt {
+    display: grid;
+    width: 830px;
+    padding-top: 8.6875rem;
+  }
+
+  .title,
+  .description {
+    text-align: start;
+    padding-left: 10.375rem;
+  }
+
+  .title {
+    font-size: 3.125rem;
+    width: 358px;
+    padding-left: 10.375rem;
+  }
+
+  .description {
+    width: 600px;
+  }
+
+  .mailinglist {
+    padding-left: 166px;
+  }
+
+  .email {
+    width: 444px;
+  }
+
+  .i-error {
+    left: 527px;
+  }
+}
