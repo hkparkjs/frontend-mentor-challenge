@@ -67,7 +67,7 @@ header img {
   font-weight: 300;
   color: var(--desaturated-red);
   margin-bottom: 1.875rem;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .title strong {
@@ -143,7 +143,6 @@ header img {
   header {
     display: grid;
     max-width: 50%;
-    padding-left: 10.375rem;
   }
 
   header img {
@@ -165,32 +164,33 @@ header img {
 
   .content-txt {
     display: grid;
-    width: 830px;
+    width: 664px;
     padding-top: 8.6875rem;
   }
 
   .title,
   .description {
     text-align: start;
-    padding-left: 10.375rem;
   }
 
   .title {
-    font-size: 3.125rem;
+    font-size: 4.125rem;
     width: 358px;
-    padding-left: 10.375rem;
   }
 
   .description {
-    width: 600px;
-  }
-
-  .mailinglist {
-    padding-left: 166px;
+    width: 446px;
+    margin-bottom: 2.5rem;
   }
 
   .email {
-    width: 444px;
+    width: 413px;
+    height: 56px;
+  }
+
+  .submit-btn {
+    width: 108px;
+    height: 56px;
   }
 
   .i-error {
