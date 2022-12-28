@@ -145,6 +145,7 @@ header {
     max-width: 920px;
     height: 509px;
     flex-direction: row;
+    margin-top: 0;
   }
 
   .container h1 {
