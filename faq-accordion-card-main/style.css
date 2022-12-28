@@ -134,3 +134,67 @@ header {
 .answer span {
   display: none;
 }
+
+@media screen and (min-width: 768px) {
+  html, body {
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 920px;
+    height: 509px;
+    flex-direction: row;
+  }
+
+  .container h1 {
+    text-align: start;
+  }
+
+  header {
+    width: 490px;
+    overflow: hidden;
+  }
+
+  .woman {
+    position: absolute;
+    z-index: 3;
+    left: -79px;
+    top: 58px;
+  }
+
+  .bg-pattern {
+    position: absolute;
+    z-index: 2;
+    left: -570px;
+    top: -305px;
+  }
+
+  .box-img {
+    position: absolute;
+    z-index: 4;
+    margin-left: -90px;
+    margin-top: 190px;
+  }
+
+  .title {
+    margin-bottom: 28px;
+  }
+
+  .question:hover {
+    color: var(--soft-red);
+  }
+
+  .faq {
+    padding: 0 90px 0 0;
+  }
+
+  .faq-item {
+    width: 340px;
+  }
+
+  .faq-item.active .answer span {
+    display: block;
+    width: 285px;
+  }
+}
