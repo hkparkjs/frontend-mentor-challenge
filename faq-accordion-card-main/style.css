@@ -1,0 +1,136 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  --gradient-start: hsl(273, 75%, 66%);
+  --gradient-end: hsl(240, 73%, 65%);
+  --white: hsl(0, 0%, 100%);
+  /* text */
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+
+  --divider: hsl(240, 5%, 91%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: linear-gradient(var(--gradient-start), var(--gradient-end));
+}
+
+.container {
+  width: 100%;
+  max-width: 327px;
+  height: 535px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 30px;
+  margin-top: 119px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 55px;
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+  margin-bottom: 15px;
+}
+
+header {
+  position: relative;
+}
+
+.header-img {
+  width: 236px;
+  margin-top: -109px;
+  margin-left: 43px;
+}
+
+.bg-pattern {
+  position: absolute;
+  left: 39px;
+  top: 1px;
+}
+
+.faq {
+  padding: 0 24px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--divider);
+}
+
+.question,
+.answer {
+  font-size: 13px;
+}
+
+.question {
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-between;
+  color: var(--very-dark-grayish-blue);
+  transition: 300ms all;
+}
+
+.question:active {
+  color: var(--soft-red);
+}
+
+.arrow-icon {
+  transform: rotate(180deg);
+  transition: transform 300ms ease-in-out;
+}
+
+/* active */
+.faq-item.active .arrow-icon {
+  transform: rotate(0deg);
+}
+
+.faq-item.active .question {
+  font-weight: 700;
+}
+
+.faq-item.active .answer {
+  height: 100%;
+  opacity: 1;
+  padding-bottom: 15px;
+}
+
+.faq-item.active .answer span {
+  display: block;
+  width: 248px;
+}
+
+.answer {
+  opacity: 0;
+  height: 0;
+  color: var(--dark-grayish-blue);
+  font-size: 12px;
+  transition: 300ms all;
+}
+
+.answer span {
+  display: none;
+}
