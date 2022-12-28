@@ -99,13 +99,13 @@ header {
 }
 
 .arrow-icon {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   transition: transform 300ms ease-in-out;
 }
 
 /* active */
 .faq-item.active .arrow-icon {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 
 .faq-item.active .question {
