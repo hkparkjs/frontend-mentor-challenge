@@ -10,3 +10,4 @@ This is the list of my frontend mentor challenge results.
 - [Article Preview Component (2022.12.15 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/article-preview-component-master)
 - [Base Apparel Coming Soon Page (2022.12.23 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/base-apparel-coming-soon-master)
 - [FAQ Accordion Card Component (2022.12.28 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/faq-accordion-card-main)
+- [Notifications Page (2022.12.31 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/notifications-page-main)
