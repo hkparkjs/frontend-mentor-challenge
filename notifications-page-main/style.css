@@ -196,3 +196,50 @@ button {
   color: var(--dark-grayish-blue);
   transition: 300ms all;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: var(--very-light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header {
+    width: 45.625rem;
+    background-color: var(--white);
+    padding: 1.8125rem;
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+
+  .notifications {
+    background-color: var(--white);
+    border-radius: 0.1875rem;
+    width: 45.625rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .notifications-item {
+    width: 41.875rem;
+  }
+
+  .mark-btn:hover {
+    color: var(--blue);
+    cursor: pointer;
+  }
+
+  .username:hover, .post:hover, .group:hover {
+    color: var(--blue);
+  }
+
+  .my-picture img:hover {
+    border: 0.125rem solid var(--light-grayish-blue-1);
+    border-radius: 0.5rem;
+  }
+
+  .private-msg:hover {
+    background-color: var(--light-grayish-blue-1);
+  }
+}
