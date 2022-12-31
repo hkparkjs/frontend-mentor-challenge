@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>Notifications</h1>
+      <div class="unread-noti">
+        <span class="number"></span>
+      </div>
+    </div>
+    <button class="mark-btn">Mark all as read</button>
+  </header>
+  <main class="notifications">
+    <ul>
+      <li class="notifications-item unread">
+        <div class="avatar">
+          <img src="./assets/images/avatar-mark-webber.webp" alt="Avatar Image of Mark Webber">
+        </div>
+        <div class="content">
+          <div class="text">
+            <span>
+              <a class="username" href="#">Mark Webber</a> reacted to your recent post 
+              <a class="post" href="#">My first tournament today!</a>
+            </span>
+            <span class="date">1m ago</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="notifications-item unread">
+        <div class="avatar">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="">
+        </div>
+        <div class="content">
+          <div class="text">
+            <span>
+              <a class="username" href="#">Angela Gray</a> followed you
+            </span>
+            <span class="date">5m ago</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="notifications-item unread">
+        <div class="avatar">
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
+        </div>
+        <div class="content">
+          <div class="text">
+            <span>
+              <a class="username" href="#">Jacob Thompson</a> has joined your group 
+              <a class="group" href="#">Chess Club</a>
+            </span>
+            <span class="date">1 day ago</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="notifications-item">
+        <div class="avatar">
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
+        </div>
+        <div class="content">
+          <div class="text">
+            <span>
+              <a class="username" href="#">Rizky Hasanuddin</a> sent you a private message
+            </span>
+            <span class="date">5 days ago</span>
+            <a class="private-msg" href="#">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="notifications-item">
+        <div class="avatar">
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
+        </div>
+        <div class="content">
+          <div class="text">
+            <span>
+              <a class="username" href="#">Kimberly Smith</a> commented on your picture
+            </span>
+            <span class="date">1 week ago</span>
+          </div>
+          <a class="my-picture" href="#">
+            <img src="./assets/images/image-chess.webp" alt="">
+          </a>
+        </div>
+      </li>
+
+      <li class="notifications-item">
+        <div class="avatar">
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
+        </div>
+        <div class="content">
+          <div class="text">
+            <span>
+              <a class="username" href="#">Nathan Peterson</a> reacted to your recent post 
+              <a class="post" href="#">5 end-game strategies to increase your win rate</a>
+            </span>
+            <span class="date">2 weeks ago</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="notifications-item">
+        <div class="avatar">
+          <img src="./assets/images/avatar-anna-kim.webp" alt="">
+        </div>
+        <div class="content">
+          <div class="text">
+            <span>
+              <a class="username" href="#">Anna Kim</a> left the group <a class="group" href="#">Chess Club</a>
+            </span>
+            <span class="date">2 weeks ago</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
