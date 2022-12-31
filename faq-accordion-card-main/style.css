@@ -174,8 +174,11 @@ header {
   .box-img {
     position: absolute;
     z-index: 4;
+    width: 144px;
+    height: 180px;
     margin-left: -90px;
     margin-top: 190px;
+    background-image: url('./images/illustration-box-desktop.svg');
   }
 
   .title {
