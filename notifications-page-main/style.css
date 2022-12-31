@@ -36,9 +36,10 @@ a {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 23.375rem;
   height: 4.5625rem;
-  padding: 1.875rem 1.0625rem;
+  padding: 0.875rem 1.0625rem;
 }
 
 header h1 {
@@ -78,7 +79,6 @@ button {
   color: var(--dark-grayish-blue);
   font-size: 0.9375rem;
   transition: 300ms all;
-  height: 1.875rem;
 }
 
 .mark-btn:active {
@@ -213,8 +213,7 @@ button {
 
   header {
     width: 45.625rem;
-    padding: 1.8125rem;
-    align-items: center;
+    padding: 1.4rem 1.8125rem;
   }
 
   .notifications {
