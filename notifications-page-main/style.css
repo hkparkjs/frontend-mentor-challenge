@@ -103,6 +103,7 @@ button {
   margin-bottom: 0.625rem;
   border-radius: 0.625rem;
   transition: 300ms all;
+  cursor: pointer;
 }
 
 .notifications-item:last-child {
@@ -204,6 +205,8 @@ button {
 
 @media screen and (min-width: 768px) {
   body {
+    width: 100%;
+    min-height: 100%;
     background-color: var(--very-light-grayish-blue);
     display: flex;
     flex-direction: column;

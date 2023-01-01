@@ -24,3 +24,12 @@ markBtn.addEventListener("click", function () {
   }
   calculateUnreadNoti();
 });
+
+for (let i=0; i<notificationsItem.length; i++) {
+  notificationsItem[i].addEventListener("click", function () {
+    if (this.classList.contains("unread")) {
+      this.classList.remove("unread");
+    }
+    calculateUnreadNoti();
+  });
+}
