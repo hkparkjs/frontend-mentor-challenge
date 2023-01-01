@@ -206,12 +206,12 @@ button {
 @media screen and (min-width: 768px) {
   body {
     width: 100%;
-    min-height: 100%;
-    background-color: var(--very-light-grayish-blue);
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--very-light-grayish-blue);
   }
 
   header {
