@@ -117,8 +117,8 @@ header {
 .error-msg {
   opacity: 0;
   visibility: hidden;
-  padding-left: 2.0625rem;
-  font-size: 0.8125rem;
+  text-align: center;
+  font-size: 0.6875rem;
   font-style: italic;
   transition: 300ms all;
 }
@@ -178,7 +178,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .container h1 {
-    font-size: 3.125rem;
+    font-size: 2.5rem;
   }
 
   .container p {
@@ -234,5 +234,10 @@ footer {
 
   .subscription.error .error-msg {
     margin-bottom: 0;
+  }
+
+  .error-msg {
+    text-align: start;
+    padding-left: 2.0625rem;
   }
 }
