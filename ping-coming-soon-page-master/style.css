@@ -162,9 +162,12 @@ footer {
   margin-right: 0;
 }
 
+.sns a:active {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+}
 .sns a:active i {
   color: var(--white);
-  background-color: var(--blue);
 }
 
 .copyright {
