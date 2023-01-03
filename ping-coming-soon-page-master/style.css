@@ -172,3 +172,64 @@ footer {
   margin-bottom: 2.375rem;
   font-size: 0.75rem;
 }
+
+@media screen and (min-width: 768px) {
+  .container h1 {
+    font-size: 3.125rem;
+  }
+
+  .container p {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    width: 5.9375rem;
+  }
+
+  .dashboard-img img {
+    width: 40rem;
+  }
+
+  .subscription form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .subscription button {
+    width: 12.5rem;
+    height: 3.5rem;
+  }
+
+  .email-input {
+    display: flex;
+    flex-direction: column;
+    color: var(--light-red);
+  }
+
+  .subscription {
+    flex-direction: row;
+  }
+
+  .subscription input {
+    width: 26.375rem;
+    height: 3.5rem;
+    margin-right: 1.0625rem;
+    margin-bottom: 1.0625rem;
+  }
+
+  .sns a:hover {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+  }
+  .sns a:hover i {
+    color: var(--white);
+  }
+
+  .submit-btn:hover {
+    opacity: 0.9;
+  }
+
+  .subscription.error .error-msg {
+    margin-bottom: 0;
+  }
+}
