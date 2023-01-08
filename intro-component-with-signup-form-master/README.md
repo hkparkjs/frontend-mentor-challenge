@@ -51,6 +51,7 @@ Users should be able to:
 ### What I learned
 
 - how to submit form using submit event and handle the event
+- how to use RegExp object correctly
 - I learned about an invalid event offered by browser and came to know submit event is not occured when the invalid event is issued.
 
 ### Useful resources
