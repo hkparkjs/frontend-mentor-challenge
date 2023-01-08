@@ -200,3 +200,59 @@ body {
 .claim-btn:active {
   opacity: 0.6;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/bg-intro-desktop.png');
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container h1 {
+    font-size: 3.125rem;
+    width: 31.25rem;
+    line-height: 3.2rem;
+  }
+
+  .container p {
+    width: 31.25rem;
+  }
+
+  .description {
+    margin-right: 3.625rem;
+    text-align: left;
+  }
+
+  .offer {
+    width: 33.75rem;
+    height: 3.75rem;
+  }
+
+  .signup-form {
+    width: 33.75rem;
+    margin-bottom: 0;
+  }
+
+  .claim-btn:hover {
+    opacity: 0.6;
+  }
+
+  .input-item input {
+    width: 28.75rem;
+  }
+
+  .claim-btn {
+    width: 28.75rem;
+  }
+
+  .error-icon {
+    left: 25.625rem;
+  }
+}
