@@ -169,3 +169,62 @@ body {
 .last-month .number {
   font-weight: 700;
 }
+
+@media screen and (min-width: 768px) {
+  .balance {
+    width: 33.75rem;
+    height: 7.8125rem;
+    border-radius: 1.25rem;
+    padding: 0 2rem;
+  }
+
+  .my .label {
+    margin-bottom: 0.75rem;
+  }
+
+  .spending {
+    width: 33.75rem;
+    height: 31.875rem;
+    border-radius: 1.25rem;
+    padding: 0 2.5rem;
+  }
+
+  .spending h1 {
+    font-size: 1.875rem;
+  }
+
+  .graph {
+    height: 18.6875rem;
+    margin-bottom: 2.3125rem;
+  }
+
+  .graph-item {
+    width: 4.25rem;
+    margin-bottom: 2.375rem;
+  }
+
+  .price {
+    font-size: 1.8125rem;
+    color: var(--very-pale-orange);
+  }
+
+  .data {
+    width: 3.125rem;
+  }
+
+  .data:hover {
+    opacity: 0.8;
+  }
+
+  .this-month .number {
+    font-size: 2.5rem;
+  }
+
+  .tooltip {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 2.5rem;
+    padding: 0 0.5625rem;
+  }
+}
