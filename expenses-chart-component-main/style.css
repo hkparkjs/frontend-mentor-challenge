@@ -94,6 +94,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1.6875rem;
+  cursor: pointer;
 }
 
 .tooltip {
@@ -113,7 +114,7 @@ body {
   transition: all 300ms;
 }
 
-.graph-item:hover .tooltip {
+.graph-item:active .tooltip {
   opacity: 1;
   visibility: visible;
 }
@@ -238,5 +239,10 @@ body {
     top: 0;
     height: 2.5rem;
     padding: 0 0.5625rem;
+  }
+
+  .graph-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
   }
 }
