@@ -246,3 +246,15 @@ body {
     visibility: visible;
   }
 }
+
+@media (orientation: landscape) {
+  body {
+    height: 100vh;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    height: 100%;
+  }
+}
