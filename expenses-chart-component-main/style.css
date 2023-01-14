@@ -21,7 +21,7 @@
 
 body {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   font-family: 'DM Sans', sans-serif;
   display: flex;
   flex-direction: column;
@@ -112,11 +112,6 @@ body {
   margin-bottom: 0.4375rem;
   padding: 0 0.125rem;
   transition: all 300ms;
-}
-
-.graph-item:active .tooltip {
-  opacity: 1;
-  visibility: visible;
 }
 
 .day {
@@ -256,5 +251,12 @@ body {
 @media (orientation: portrait) {
   body {
     height: 100%;
+  }
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .graph-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
   }
 }
