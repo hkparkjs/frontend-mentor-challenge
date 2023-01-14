@@ -13,5 +13,5 @@ This is the list of my frontend mentor challenge results.
 - [Notifications Page (2022.12.31 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/notifications-page-main)
 - [Ping Coming Soon Page (2023.1.3 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/ping-coming-soon-page-master)
 - [Intro Component with Signup Form (2023.1.8 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/intro-component-with-signup-form-master)
-- [Expenses Chart Component (2023.1.14 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/intro-component-with-signup-form-master)
+- [Expenses Chart Component (2023.1.14 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/expenses-chart-component-main)
 
