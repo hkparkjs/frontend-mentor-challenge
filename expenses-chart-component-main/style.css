@@ -246,13 +246,13 @@ body {
 }
 
 @media (orientation: landscape) {
-  body {
+  html, body {
     height: 100vh;
   }
 }
 
 @media (orientation: portrait) {
-  body {
+  html, body {
     height: 100%;
   }
 }
