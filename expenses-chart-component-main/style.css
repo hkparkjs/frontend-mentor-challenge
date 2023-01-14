@@ -19,12 +19,9 @@
   margin: 0;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   width: 100%;
+  min-height: 100vh; 
   font-family: 'DM Sans', sans-serif;
   display: flex;
   flex-direction: column;
@@ -242,17 +239,5 @@ body {
   .graph-item:hover .tooltip {
     opacity: 1;
     visibility: visible;
-  }
-}
-
-@media (orientation: landscape) {
-  html, body {
-    height: 100vh;
-  }
-}
-
-@media (orientation: portrait) {
-  html, body {
-    height: 100%;
   }
 }
