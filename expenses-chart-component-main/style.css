@@ -55,6 +55,7 @@ body {
 .price {
   font-size: 1.5625rem;
   font-weight: 700;
+  color: var(--very-pale-orange);
 }
 
 .spending {
@@ -72,6 +73,7 @@ body {
 .spending h1 {
   font-size: 1.5rem;
   text-align: left;
+  color: var(--dark-brown);
 }
 
 .graph {
@@ -139,6 +141,11 @@ body {
 .this-month .number {
   font-size: 2rem;
   font-weight: 700;
+  color: var(--dark-brown);
+}
+
+.last-month .number {
+  color: var(--dark-brown);
 }
 
 .this-month .label {
@@ -162,7 +169,7 @@ body {
 
 .last-month {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   text-align: right;
 }
 
@@ -203,6 +210,10 @@ body {
     margin-bottom: 2.375rem;
   }
 
+  .day {
+    font-size: 0.875rem;
+  }
+
   .price {
     font-size: 1.8125rem;
     color: var(--very-pale-orange);
@@ -210,6 +221,7 @@ body {
 
   .data {
     width: 3.125rem;
+    margin-bottom: 0.9375rem;
   }
 
   .data:hover {
