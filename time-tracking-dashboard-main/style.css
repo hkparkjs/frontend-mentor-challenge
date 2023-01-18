@@ -326,6 +326,7 @@ button {
   
   .data:hover {
     background-color: var(--desaturated-blue);
+    cursor: pointer;
   }
 
   .description span:first-child {
