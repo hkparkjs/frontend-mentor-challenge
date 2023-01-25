@@ -1,0 +1,340 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+:root {
+  /* Primary */
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+
+  /* Neutral */
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Karla', sans-serif;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'DM Serif Display', serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+nav {
+  position: absolute;
+  top: 80px;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--very-light-gray);
+  font-size: 18px;
+  transition: 200ms all ease-out;
+  background-color: var(--very-dark-violet);
+  background-image: url('./images/bg-pattern-mobile-nav.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-top: 32px;
+  z-index: 10;
+}
+
+nav ul li a {
+  width: 327px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--very-light-gray);
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.plans {
+  border: 2px solid var(--very-light-gray);
+}
+
+nav ul li a:active {
+  opacity: 0.8;
+}
+
+nav.active {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+
+.menu-btn.active {
+  background-image: url('./images/icon-close.svg');
+}
+
+.header-img {
+  display: flex;
+  height: 451px;
+}
+
+.header-img img {
+  width: 100%;
+}
+
+.menu-btn {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background-image: url('./images/icon-hamburger.svg');
+  transition: 200ms background-image;
+}
+
+.description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./images/bg-pattern-intro-right-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top 400px right;
+}
+
+.intro {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--very-light-gray);
+  background-color: var(--dark-violet);
+  background-image: url('./images/bg-pattern-intro-left-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin-bottom: 140px;
+}
+
+.intro h1 {
+  width: 345px;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-bottom: 22px;
+}
+
+.intro hr {
+  display: none;
+}
+
+.intro p {
+  font-size: 16px;
+  margin-bottom: 35px;
+  width: 317px;
+  line-height: 28px;
+}
+
+.intro a, .how a {
+  border: 2px solid var(--very-light-gray);
+  width: 146px;
+  height: 40px;
+  color: var(--very-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration-line: none;
+  letter-spacing: 2px;
+  font-size: 13px;
+  background-color: var(--dark-violet);
+}
+
+.intro a:active, .how a:active {
+  background-color: var(--very-light-gray);
+  color: var(--dark-violet);
+}
+
+.benefit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 140px;
+}
+
+.benefit hr {
+  width: 150px;
+  margin-bottom: 45px;
+  border: 0.5px solid var(--dark-grayish-violet);
+}
+
+.benefit h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.benefit h3 {
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+
+.benefit-item p {
+  width: 305px;
+  line-height: 25px;
+  font-size: 15px;
+  color: var(--dark-grayish-violet);
+}
+
+.benefit-item {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.benefit-icon {
+  margin-bottom: 37px;
+}
+
+.how {
+  width: 327px;
+  height: 344px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--very-light-gray);
+  background-color: var(--dark-violet);
+  background-image: url('./images/bg-pattern-how-we-work-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin-bottom: 140px;
+}
+
+.how h2 {
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 42px;
+  margin-bottom: 40px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--very-light-gray);
+  background-image: url('./images/bg-pattern-footer-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+footer .logo {
+  padding-top: 80px;
+  margin-bottom: 32px;
+}
+
+footer .sns {
+  margin-bottom: 40px;
+}
+
+.share {
+  width: 328px;
+  border-bottom: 0.5px solid var(--dark-grayish-violet);
+  margin-bottom: 42px;
+}
+
+.sns a {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.sns a:last-child {
+  margin-right: 0;
+}
+
+.sns a svg path {
+  transition: 300ms fill;
+}
+
+.sns a:active svg path {
+  fill: var(--very-dark-violet);
+}
+
+footer hr {
+  width: 328px;
+  border: 0.5px solid var(--grayish-blue);
+}
+
+footer a {
+  text-transform: uppercase;
+  text-decoration-line: none;
+  letter-spacing: 1px;
+  color: var(--dark-violet);
+  text-align: center;
+}
+
+footer a:active {
+  text-decoration: underline;
+}
+
+.sitemap {
+  margin-bottom: 50px;
+}
+
+.sitemap h3, .sitemap div {
+  font-family: 'Karla', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.sitemap h3 {
+  color: var(--dark-grayish-violet);
+}
+
+.sitemap div {
+  color: var(--very-dark-violet);
+}
+
+.sitemap div li {
+  margin-bottom: 10px;
+}
