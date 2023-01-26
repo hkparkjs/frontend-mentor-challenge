@@ -86,6 +86,11 @@ nav ul li a {
   border: 2px solid var(--very-light-gray);
 }
 
+.plans:active {
+  background-color: var(--very-dark-violet);
+  color: var(--very-light-gray);
+}
+
 nav ul li a:active {
   opacity: 0.8;
 }
@@ -118,15 +123,13 @@ nav.active {
 }
 
 .description {
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('./images/bg-pattern-intro-right-mobile.svg');
-  background-repeat: no-repeat;
-  background-position: top 400px right;
 }
 
 .intro {
@@ -139,9 +142,6 @@ nav.active {
   text-align: center;
   color: var(--very-light-gray);
   background-color: var(--dark-violet);
-  background-image: url('./images/bg-pattern-intro-left-mobile.svg');
-  background-repeat: no-repeat;
-  background-position: top left;
   margin-bottom: 140px;
 }
 
@@ -176,7 +176,6 @@ nav.active {
   text-decoration-line: none;
   letter-spacing: 2px;
   font-size: 13px;
-  background-color: var(--dark-violet);
 }
 
 .intro a:active, .how a:active {
@@ -184,8 +183,20 @@ nav.active {
   color: var(--dark-violet);
 }
 
+.intro picture.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.intro picture.right {
+  position: absolute;
+  top: 350px;
+  right: 0;
+}
+
 .benefit {
-  width: 100%;
+  width: 1110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,7 +260,7 @@ nav.active {
 .how h2 {
   font-weight: 400;
   font-size: 39px;
-  line-height: 42px;
+  line-height: 60px;
   margin-bottom: 40px;
 }
 
@@ -432,8 +443,6 @@ footer a:active {
   .intro {
     align-items: flex-start;
     text-align: left;
-    background-image: url('./images/bg-pattern-intro-left-desktop.svg'), url('./images/bg-pattern-intro-right-desktop.svg');
-    background-position: top 390px left, top right;
     padding-left: 165px;
     margin-bottom: 388px;
   }
@@ -466,9 +475,21 @@ footer a:active {
     background-image: url('');
   }
 
+  .intro picture.left {
+    position: absolute;
+    top: 329px;
+    left: 0;
+  }
+
+  .intro picture.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+
   .benefit {
     align-items: flex-start;
-    padding: 0 165px;
   }
 
   .benefit h2 {
@@ -476,8 +497,10 @@ footer a:active {
   }
 
   .benefit > div {
+    width: 1110px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .benefit-item {
