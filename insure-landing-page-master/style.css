@@ -193,6 +193,7 @@ nav.active {
   position: absolute;
   top: 350px;
   right: 0;
+  z-index: 5;
 }
 
 .benefit {
@@ -364,7 +365,7 @@ footer a:active {
     flex-direction: row;
     top: 0;
     left: 0;
-    z-index: inherit;
+    z-index: 5;
     color: var(--dark-grayish-violet);
     background-color: transparent;
     padding-top: 0;
@@ -485,7 +486,7 @@ footer a:active {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 10;
+    z-index: 5;
   }
 
   .benefit {
