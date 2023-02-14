@@ -273,3 +273,167 @@ nav ul {
   width: auto;
   height: 100%;
 }
+
+@media screen and (min-width: 768px) {
+  .logo a {
+    margin-right: 2.5rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    margin-bottom: 3.125rem;
+  }
+
+  header nav {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4.375rem;
+    right: 0;
+    background-color: white;
+    flex-direction: row;
+    padding-top: 0;
+  }
+
+  .header-img {
+    width: 30rem;
+    height: 39.9375rem;
+  }
+
+  .menubar {
+    width: auto;
+  }
+
+  .left a, .left button, .right a, .description a, .menu-arrow {
+    transition: 300ms all;
+  }
+
+  .left {
+    margin-bottom: 0;
+  }
+
+  .left ul, .right ul {
+    display: flex;
+  }
+
+  .left li {
+    margin-right: 2.0625rem;
+  }
+
+  .description {
+    margin-right: 15rem;
+    align-items: start;
+    text-align: start;
+  }
+
+  .description h1 {
+    width: 32rem;
+    font-size: 76px;
+  }
+
+  .description p {
+    width: 26.5rem;
+  }
+
+  .description a {
+    width: 10.1875rem;
+    margin-bottom: 7.125rem;
+  }
+
+  .description a:hover {
+    background-color: var(--almost-white);
+    color: var(--almost-black);
+    border: 1px solid var(--almost-black);
+  }
+
+  .right {
+    padding-right: 2.5rem;
+  }
+
+  .right ul li a {
+    width: 6.5rem;
+  }
+
+  .expandable-menu button {
+    margin-right: 0.625rem;
+    cursor: pointer;
+  }
+
+  .left button:hover, .left a:hover, .right a:hover {
+    color: var(--almost-black);
+  }
+
+  .register-btn:hover {
+    border: 2px solid var(--almost-black);
+  }
+
+  .detail-menu ul {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: start;
+  }
+
+  .detail-menu li {
+    margin-right: 0;
+    height: 2.0625rem;
+  }
+
+  .detail-menu.open {
+    position: absolute;
+    top: 2.75rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+    padding: 0.5625rem 1.4375rem;
+    border-radius: 10px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  }
+
+  .detail-menu.features { 
+    right: 0;
+  }
+
+  .company > .detail-menu {
+    left: 0;
+  }
+
+  .company > .detail-menu ul li {
+    width: 4.5rem;
+  }
+
+  .features > .detail-menu {
+    right: 0;
+  }
+
+  .clients {
+    margin-bottom: 0;
+  }
+
+  .clients img {
+    width: 5.25rem;
+  }
+
+  .header-img picture img {
+    width: auto;
+  }
+
+  .menu-arrow.up {
+    display: flex;
+  }
+}
