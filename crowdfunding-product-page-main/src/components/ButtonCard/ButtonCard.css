@@ -1,0 +1,64 @@
+.button-card {
+  width: 280px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid rgb(219, 219, 219);
+  padding: 26px 26px 0 26px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--moderate-cyan);
+  margin-bottom: 23px;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 23px;
+}
+
+.money {
+  margin-bottom: 23px;
+  color: var(--dark-gray);
+  display: flex;
+  align-items: center;
+}
+
+.money span:first-child {
+  color: var(--black);
+  font-size: 33px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.money span:last-child {
+  font-weight: 500;
+}
+
+.button-card-btn {
+  width: 157px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: var(--moderate-cyan);
+  color: white;
+  font-weight: 700;
+}
+
+.button-card.out-of-stock {
+  opacity: 0.4;
+}
+
+.out-of-stock button {
+  background-color: var(--dark-gray);
+}

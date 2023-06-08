@@ -1,0 +1,120 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --moderate-cyan: hsl(176, 50%, 47%);
+  --dark-cyan: hsl(176, 72%, 28%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 48%);
+}
+
+body {
+  font-family: 'Commissioner', sans-serif;
+}
+
+h1 {
+  font-size: 23px;
+  margin-bottom: 26px;
+}
+
+p {
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+#root {
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.header {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  background-image: url('./assets/image-hero-mobile.jpg');
+  background-size: cover;
+}
+
+.header-bar {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  margin: 24px 32px;
+}
+
+.mobile-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container > div {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.main-title {
+  width: 327px;
+  height: 284px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: -56px;
+}
+
+.main-title-text-area {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title-text-area {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.main-title-text-area h1 {
+  font-size: 23px;
+  margin-top: 22px;
+}
+
+.main-title-button-area {
+  width: 279px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title-text-area p {
+  line-height: 24px;
+}
+
+.main-title-button {
+  width: 214px;
+  height: 56px;
+  border-radius: 30px;
+  background-color: var(--moderate-cyan);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}

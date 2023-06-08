@@ -1,0 +1,128 @@
+.radio-card {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid rgb(219, 219, 219);
+  margin-bottom: 24px;
+}
+
+.radio-card.out-of-stock {
+  opacity: 0.4;
+}
+
+.radio-card > .money span:first-child {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 10px;
+  padding-left: 26px;
+}
+
+.radio-card > .description {
+  width: 256px;
+  line-height: 25px;
+  padding-left: 26px;
+}
+
+.radio-button-container {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 84%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 17px;
+}
+
+.radio-card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 26px;
+  padding-left: 26px;
+  margin-bottom: 23px;
+}
+
+.radio-card-title input[type="radio"] {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: 300ms all;
+}
+
+.radio-card-title input[type="radio"]:checked {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: var(--moderate-cyan);
+}
+
+.radio-card-title label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.radio-card .price {
+  margin-bottom: 0;
+}
+
+.radio-card-label {
+  margin-bottom: 24px;
+  border-top: 1px solid hsl(0, 0%, 84%);
+  padding-top: 33px;
+}
+
+.radio-card-label label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-gray);
+}
+
+.radio-card-input {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.radio-card-input-area {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 22px;
+}
+
+.radio-card-input-area > label {
+  position: absolute;
+  left: 48px;
+  top: 14px;
+  color: hsl(0, 0%, 67%);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.radio-card-input-area input[type=text] {
+  width: 100px;
+  height: 48px;
+  border-radius: 30px;
+  border: 1px solid hsl(0, 0%, 84%);
+  padding-left: 38px;
+  margin-right: 16px;
+  font-family: 'Commissioner', sans-serif;
+  font-weight: 700;
+}
+
+.radio-card-input-area button {
+  width: 115px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: var(--moderate-cyan);
+  color: white;
+  font-weight: 700;
+}
+
+.selected {
+  border: 2px solid var(--moderate-cyan);
+}
