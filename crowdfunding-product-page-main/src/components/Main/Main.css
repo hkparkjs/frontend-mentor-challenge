@@ -71,11 +71,6 @@ hr {
   background-image: url('../../assets/icon-bookmark.svg');
 }
 
-.bookmark-btn.bookmarked {
-  color: var(--dark-cyan);
-  background-color: hsl(53, 29%, 97%);
-}
-
 .bookmark-btn.bookmarked .bookmark-btn-icon {
   background-image: url('../../assets/icon-bookmarked.svg');
 }
@@ -240,6 +235,11 @@ div.progress {
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  .bookmark-btn.bookmarked {
+    color: var(--dark-cyan);
+    background-color: hsl(53, 29%, 97%);
   }
 
   .performance {
