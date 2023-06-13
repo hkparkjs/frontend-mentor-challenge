@@ -9,6 +9,11 @@
   margin-bottom: 24px;
 }
 
+.button-card-title {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   font-size: 14px;
   font-weight: 700;
@@ -53,6 +58,7 @@
   background-color: var(--moderate-cyan);
   color: white;
   font-weight: 700;
+  transition: 300ms all;
 }
 
 .button-card.out-of-stock {
@@ -61,4 +67,49 @@
 
 .out-of-stock button {
   background-color: var(--dark-gray);
+}
+
+@media screen and (min-width: 768px) {
+  .button-card {
+    width: 634px;
+    height: 248px;
+    padding: 43px 33px 43px 33px;
+  }
+
+  .button-card-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .reward-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .money {
+    margin-bottom: 0;
+  }
+
+  .button-card-btn {
+    font-size: 15px;
+  }
+
+  .button-card-btn:hover:enabled {
+    background-color: var(--dark-cyan);
+  }
 }

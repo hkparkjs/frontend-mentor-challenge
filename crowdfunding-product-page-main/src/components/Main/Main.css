@@ -4,7 +4,15 @@ hr {
 }
 
 .main-title {
+  width: 327px;
+  height: 284px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
   border: 1px solid hsl(0, 0%, 95.69%);
+  margin-top: -56px;
   margin-bottom: 24px;
 }
 
@@ -18,22 +26,93 @@ hr {
   top: 215px;
 }
 
+.main-title-text-area {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.main-title-text-area h1 {
+  font-size: 23px;
+  margin-top: 22px;
+}
+
+.main-title-button-area {
+  width: 279px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title-text-area p {
+  line-height: 24px;
+}
+
+.main-title-button {
+  width: 214px;
+  height: 56px;
+  border-radius: 30px;
+  background-color: var(--moderate-cyan);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 300ms all;
+}
+
+.bookmark-btn {
+  width: 56px;
+  height: 56px;
+}
+
+.bookmark-btn-icon {
+  width: 56px;
+  height: 56px;
+  background-image: url('../../assets/icon-bookmark.svg');
+}
+
+.bookmark-btn.bookmarked {
+  color: var(--dark-cyan);
+  background-color: hsl(53, 29%, 97%);
+}
+
+.bookmark-btn.bookmarked .bookmark-btn-icon {
+  background-image: url('../../assets/icon-bookmarked.svg');
+}
+
 .performance {
   width: 327px;
   height: 410px;
   border: 1px solid hsl(0, 0%, 95.69%);
   margin-bottom: 24px;
-}
-
-.performance, .performance div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
+.performance div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .performance span {
   text-align: center;
+}
+
+.performance-report-item {
+  margin-bottom: 26px;
+}
+
+.performance-report-item:last-child {
+  margin-bottom: 0;
+}
+
+.line {
+  width: 80px;
+  border-bottom: 0.1px solid hsl(0, 0%, 84%);
+  margin-bottom: 33px;
 }
 
 .about {
@@ -92,12 +171,163 @@ div.progress {
   margin-bottom: 30px;
 }
 
-.about-txt-area p:last-child {
-  margin-bottom: 0;
-}
-
 .about-button-card-area {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.close-btn svg {
+  opacity: 0.4;
+  transition: 300ms opacity;
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    width: 732px;
+    height: 268px;
+  }
+
+  .main-title::before {
+    top: 315px;
+  }
+
+  .main-title-button-area {
+    width: 634px;
+  }
+
+  .main-title-text-area {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .main-title-text-area h1 {
+    font-size: 27px;
+  }
+
+  .main-title-text-area p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .main-title-button {
+    font-size: 16px;
+  }
+
+  .main-title-button:hover {
+    background-color: var(--dark-cyan);
+  }
+
+  .bookmark-btn {
+    width: 190px;
+    height: 56px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: hsl(0,0%,94%);
+    padding-left: 72px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 300ms all;
+  }
+
+  .bookmark-btn:hover {
+    opacity: 0.6;
+  }
+
+  .bookmark-btn img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .performance {
+    width: 732px;
+    height: 213px;
+  }
+
+  .performance div {
+    align-items: start;
+  }
+
+  div.performance-report {
+    width: 633px;
+    flex-direction: row;
+  }
+
+  .performance-report-item {
+    width: 180px;
+  }
+
+  .performance-report > div:first-child {
+    margin-right: 0;
+  }
+
+  .performance-report-item {
+    margin-bottom: 0;
+  }
+
+  .line {
+    width: 1px;
+    height: 64px;
+    border-bottom: 0;
+    border-right: 0.1px solid hsl(0, 0%, 84%);
+    margin-bottom: 0;
+    margin-right: 48px;
+  }
+
+  div.progress {
+    width: 633px;
+  }
+
+  .progress-bar {
+    width: 496px;
+  }
+
+  .num {
+    font-size: 30px;
+  }
+
+  .performance-report:first-child .num {
+    margin-right: 60px;
+  }
+
+  .performance-report:nth-child(1) .num {
+    margin-right: 17px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .about {
+    width: 732px;
+  }
+
+  .about-txt-area {
+    margin: 40px 50px;
+  }
+
+  .about-txt-area h2 {
+    font-size: 20px;
+  }
+
+  .about-txt-area p {
+    width: 633px;
+    font-size: 16px;
+  }
+
+  .about-button-card-area {
+    margin-bottom: 16px;
+  }
+
+  .bookmark-btn-icon {
+    position: absolute;
+    left: 0;
+  }
+
+  .close-btn:hover svg {
+    opacity: 1;
+  }
 }

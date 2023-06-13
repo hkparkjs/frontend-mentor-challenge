@@ -9,6 +9,7 @@
 
 .radio-card.out-of-stock {
   opacity: 0.4;
+  z-index: -1;
 }
 
 .radio-card > .money span:first-child {
@@ -120,9 +121,96 @@
   border-radius: 30px;
   background-color: var(--moderate-cyan);
   color: white;
+  font-size: 15px;
   font-weight: 700;
 }
 
 .selected {
   border: 2px solid var(--moderate-cyan);
+}
+
+@media screen and (min-width: 768px) {
+  .radio-card {
+    position: relative;
+    width: 634px;
+  }
+
+  .radio-card > .description {
+    width: 96%;
+    padding-left: 76px;
+    font-size: 15px;
+  }
+
+  .radio-button-container {
+    transition: 300ms all;
+    margin-right: 25px;
+  }
+
+  .radio-card-title:hover .radio-button-container {
+    border: 1px solid var(--moderate-cyan);
+  }
+
+  .radio-card-title .title {
+    transition: 300ms all;
+  }
+
+  .radio-card-title:hover .title {
+    color: var(--moderate-cyan);
+    cursor: pointer;
+  }
+
+  .radio-card-title label {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .radio-card-title label span:first-child {
+    margin-right: 19px;
+  }
+
+  .radio-card .money {
+    position: absolute;
+    right: 28px;
+    top: 26px;
+  }
+
+  .radio-card-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 94px;
+    border-top: 1px solid hsl(0, 0%, 84%);
+  }
+
+  .radio-card-label {
+    border-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  .radio-card-label label {
+    margin-right: 223px;
+  }
+
+  .radio-card-input-area {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .radio-card-input-area > label {
+    left: 24px;
+  }
+
+  .radio-card-input-area input:hover {
+    border: 1px solid var(--dark-cyan);
+    cursor: pointer;
+  }
+
+  .radio-card-input-area button {
+    transition: 300ms all;
+  }
+
+  .radio-card-input-area button:hover {
+    background-color: var(--dark-cyan);
+  }
 }

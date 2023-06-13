@@ -11,12 +11,12 @@ const RadioCard = ({ title, price, description, left, selected, selectedStand, o
     if (!thankYouAlert.classList.contains('open')) {
       thankYouAlert.classList.add('open');
       document.getElementsByTagName('body')[0].classList.add('open-alert');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0 });
     }
   };
 
   return (
-    <div className={`radio-card${left == 0 ? ' out-of-stock' : ''}${selected === "true" ? ' selected' : ''}`}>
+    <div className={`radio-card${left == 0 ? ' out-of-stock' : ''}${selectedStand === title ? ' selected' : ''}`}>
       <div className="radio-card-title">
         <div className="radio-button-container">
           <input

@@ -31,17 +31,17 @@ const Header = () => {
           >
             {/* <img src={hamburger} alt="" aria-label="Menu button" /> */}
           </button>
-        </div>
-      </div>
-      <div className="menu mobile-hidden">
-        <div className="menu-item">
-          <a href="#">About</a>
-        </div> 
-        <div className="menu-item">
-          <a href="#">Discover</a>
-        </div>
-        <div className="menu-item">
-          <a href="#">Get Started</a>
+          <div className="menu mobile-hidden">
+            <div className="menu-item">
+              <a href="#">About</a>
+            </div>
+            <div className="menu-item">
+              <a href="#">Discover</a>
+            </div>
+            <div className="menu-item">
+              <a href="#">Get Started</a>
+            </div>
+          </div>
         </div>
       </div>
     </>

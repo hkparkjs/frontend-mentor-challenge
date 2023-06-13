@@ -45,76 +45,7 @@ p {
   margin-bottom: 70px;
 }
 
-.header {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  background-image: url('./assets/image-hero-mobile.jpg');
-  background-size: cover;
-}
-
-.header-bar {
-  width: 100%;
-  height: 25px;
-  display: flex;
-  justify-content: space-between;
-  /* align-items: flex-start; */
-  margin: 24px 32px;
-}
-
-.mobile-hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .container > div {
   background-color: white;
   border-radius: 10px;
-}
-
-.main-title {
-  width: 327px;
-  height: 284px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  margin-top: -56px;
-}
-
-.main-title-text-area {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-}
-
-.main-title-text-area {
-  text-align: center;
-  margin-bottom: 22px;
-}
-
-.main-title-text-area h1 {
-  font-size: 23px;
-  margin-top: 22px;
-}
-
-.main-title-button-area {
-  width: 279px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-title-text-area p {
-  line-height: 24px;
-}
-
-.main-title-button {
-  width: 214px;
-  height: 56px;
-  border-radius: 30px;
-  background-color: var(--moderate-cyan);
-  color: white;
-  font-size: 15px;
-  font-weight: 700;
 }

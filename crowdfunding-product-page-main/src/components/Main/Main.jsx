@@ -8,6 +8,7 @@ import BackThisProject from '../BackThisProject/BackThisProject.jsx';
 
 const Main = () => {
   const [selectedStand, setSelectedStand] = useState('');
+  const [bookmarked, setBookmarked] = useState(false);
   const showModal = () => {
     const modal = document.querySelector('.modal-area');
     if (!modal.classList.contains('open')) {
@@ -33,23 +34,34 @@ const Main = () => {
             >
               Back this project
             </button>
-            <button><img src={BookmarkBtn} alt="" aria-label="Bookmark Button" /></button>
+            <button
+              className={`bookmark-btn${bookmarked ? ' bookmarked' : ''}`}
+              onClick={() => setBookmarked(!bookmarked)}
+            >
+              <div className="bookmark-btn-icon"></div>
+              {/* <img src={BookmarkBtn} alt="" aria-label="Bookmark Button" /> */}
+              <div className="bookmark-btn-text mobile-hidden">
+                { bookmarked === true ? 'Bookmarked' : 'Bookmark' }
+              </div>
+            </button>
           </div>  
         </div>
         <div className="performance">
-          <div>
-            <span className="num">$89,914</span>
-            <span className="label">of $100,000 backed</span>
-          </div>
-          <hr />
-          <div>
-            <span className="num">5,007</span>
-            <span className="label">total backers</span> 
-          </div>
-          <hr />
-          <div>
-            <span className="num">56</span>
-            <span className="label">days left</span>
+          <div className="performance-report">
+            <div className="performance-report-item">
+              <span className="num">$89,914</span>
+              <span className="label">of $100,000 backed</span>
+            </div>
+            <div className="line"></div>
+            <div className="performance-report-item">
+              <span className="num">5,007</span>
+              <span className="label">total backers</span>
+            </div>
+            <div className="line"></div>
+            <div className="performance-report-item">
+              <span className="num">56</span>
+              <span className="label">days left</span>
+            </div>
           </div>
           <div className="progress">
             <div className="progress-bar"></div>
@@ -75,7 +87,7 @@ const Main = () => {
                 onClick={() => {
                   setSelectedStand(stand.title);
                   showModal();
-                  window.scrollTo({ top: 262 + 246* idx, behavior: 'smooth' });
+                  window.scrollTo({ top: 262 + 186* idx, behavior: 'smooth' });
                 }}
                 {...stand}
               />

@@ -1,9 +1,28 @@
+.mobile-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 body.open-modal {
   overflow: hidden;
 }
 
+.header {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  background-image: url('../../assets/image-hero-mobile.jpg');
+  background-size: cover;
+}
+
 .header-bar {
   position: relative;
+  width: 87%;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
 }
 
 .logo {
@@ -40,7 +59,7 @@ body.open-modal {
 .menu-background.open {
   opacity: 0.7;
   visibility: visible;
-  height:100vh;
+  height: 100vh;
   top: 0;
 }
 
@@ -49,12 +68,11 @@ body.open-modal {
   z-index: 50;
   border-radius: 10px;
   display: flex;
-  right: 26px;
-  top: 80px;
+  top: 48px;
   justify-content: center;
   flex-direction: column;
   background-color: white;
-  width: 327px;
+  width: 100%;
   height: 212px;
   border: 1px solid hsl(0,0%,93%);
   transition: 300ms all;
@@ -84,4 +102,70 @@ body.open-modal {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-hidden {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .desktop-hidden {
+    display: none;
+  }
+
+  .header {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-image: url('../../assets/image-hero-desktop.jpg');
+    background-size: cover;
+  }
+
+  .header-bar {
+    width: 79%;
+    margin: 48px 32px;
+  }
+
+  .logo {
+    position: relative;
+    z-index: unset;
+  }
+
+  .menu {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+    border: 0;
+    right: 0;
+    top: 0;
+    z-index: unset;
+  }
+
+  .menu-item {
+    margin-right: 30px;
+  }
+
+  .menu-item:last-child {
+    margin-right: 0;
+  }
+
+  .menu-item a {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    border-bottom: 0;
+    padding: 0;
+  }
+
+  .menu-item a:last-child {
+    margin-right: 0;
+  }
 }

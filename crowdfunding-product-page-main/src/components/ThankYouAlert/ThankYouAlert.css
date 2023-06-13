@@ -77,3 +77,33 @@ body.open-alert {
   color: white;
   font-weight: 700;
 }
+
+@media screen and (min-width: 768px) {
+  .thank-you-alert-container {
+    width: 540px;
+    height: 450px;
+  }
+
+  .thank-you-alert-container h3 {
+    font-size: 24px;
+  }
+
+  .thank-you-alert-container p {
+    width: 442px;
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  .check-img {
+    width: 90px;
+  }
+
+  .alert-btn {
+    font-size: 15px;
+    transition: 300ms all;
+  }
+
+  .alert-btn:hover {
+    background-color: var(--dark-cyan);
+  }
+}
