@@ -82,6 +82,7 @@
   align-items: center;
   justify-content: center;
   color: var(--dark-gray);
+  font-size: 14px;
 }
 
 .radio-card-input {
@@ -98,10 +99,10 @@
 .radio-card-input-area > label {
   position: absolute;
   left: 48px;
-  top: 14px;
+  top: 13px;
   color: hsl(0, 0%, 67%);
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .radio-card-input-area input[type=text] {
@@ -112,6 +113,7 @@
   padding-left: 38px;
   margin-right: 16px;
   font-family: 'Commissioner', sans-serif;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -121,7 +123,7 @@
   border-radius: 30px;
   background-color: var(--moderate-cyan);
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
 }
 
