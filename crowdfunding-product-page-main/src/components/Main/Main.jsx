@@ -9,6 +9,9 @@ import BackThisProject from '../BackThisProject/BackThisProject.jsx';
 const Main = () => {
   const [selectedStand, setSelectedStand] = useState('');
   const [bookmarked, setBookmarked] = useState(false);
+  const [backers, setBackers] = useState(5007);
+  const [money, setMoney] = useState(89914);
+
   const showModal = () => {
     const modal = document.querySelector('.modal-area');
     if (!modal.classList.contains('open')) {
@@ -49,12 +52,12 @@ const Main = () => {
         <div className="performance">
           <div className="performance-report">
             <div className="performance-report-item">
-              <span className="num">$89,914</span>
+              <span className="num">${money.toLocaleString('en')}</span>
               <span className="label">of $100,000 backed</span>
             </div>
             <div className="line"></div>
             <div className="performance-report-item">
-              <span className="num">5,007</span>
+              <span className="num">{backers.toLocaleString('en')}</span>
               <span className="label">total backers</span>
             </div>
             <div className="line"></div>
@@ -95,7 +98,12 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <BackThisProject selectedStand={selectedStand} onSelected={stand => setSelectedStand(stand)}/>
+      <BackThisProject
+        selectedStand={selectedStand}
+        onSelected={stand => setSelectedStand(stand)}
+        onChangeBackers={() => setBackers(backers + 1)}
+        onChangeMoney={value => setMoney(value + money)}
+      />
     </>
   );
 };

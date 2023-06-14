@@ -4,7 +4,7 @@ import CloseBtn from '../../assets/icon-close-modal.svg';
 import { stands } from '../../data/stands.json';
 import RadioCard from '../RadioCard/RadioCard';
 
-const BackThisProject = ({ selectedStand, onSelected }) => {
+const BackThisProject = ({ selectedStand, onSelected, onChangeBackers, onChangeMoney }) => {
   return (
     <div className="modal-area">
       <div className="modal-background">
@@ -19,6 +19,7 @@ const BackThisProject = ({ selectedStand, onSelected }) => {
               if (modal.classList.contains('open')) {
                 modal.classList.remove('open');
               }
+              onSelected('');
             }}
           >
             {/* <img src={CloseBtn} alt="" aria-label="Modal Close Button" /> */}
@@ -35,6 +36,8 @@ const BackThisProject = ({ selectedStand, onSelected }) => {
               onSelected={stand => onSelected(stand)}
               isActive={selectedStand === stand.title} 
               selectedStand={selectedStand}
+              onChangeBackers={onChangeBackers}
+              onChangeMoney={value => onChangeMoney(value)}
               {...stand}
             />
           ))}

@@ -75,6 +75,7 @@ body.open-alert {
   border-radius: 30px;
   background-color: var(--moderate-cyan);
   color: white;
+  font-size: 14px;
   font-weight: 700;
 }
 
