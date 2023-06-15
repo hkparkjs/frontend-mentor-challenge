@@ -169,3 +169,14 @@ body.open-modal {
     margin-right: 0;
   }
 }
+
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index:-1;
+
+  /* load images */
+  content:url('../../assets/icon-close-menu') url('../../assets/icon-bookmarked.svg');
+}
