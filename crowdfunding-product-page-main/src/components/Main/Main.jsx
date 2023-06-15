@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import BookmarkBtn from '../../assets/icon-bookmark.svg';
 import ButtonCard from '../ButtonCard/ButtonCard';
 import { stands } from '../../data/stands.json';
@@ -18,6 +18,16 @@ const Main = () => {
       modal.classList.add('open');
     }
   };
+
+  useEffect(() => {
+    let totalWidth = document.querySelector('.progress').clientWidth;
+    let progressBarWidth = money / 100000 * totalWidth;
+    if (progressBarWidth < totalWidth) {
+      document.querySelector('.progress-bar').style.width = `${money/100000*totalWidth}px`;
+    } else {
+      document.querySelector('.progress-bar').style.width = `${totalWidth}px`;
+    }
+  }, [money]);
 
   return (
     <>

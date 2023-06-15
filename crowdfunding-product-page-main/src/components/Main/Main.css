@@ -139,7 +139,6 @@ div.progress {
 }
 
 .progress-bar {
-  width: 218px;
   height: 12px;
   background-color: var(--moderate-cyan);
   border-radius: 20px;
@@ -274,10 +273,6 @@ div.progress {
 
   div.progress {
     width: 633px;
-  }
-
-  .progress-bar {
-    width: 496px;
   }
 
   .num {
