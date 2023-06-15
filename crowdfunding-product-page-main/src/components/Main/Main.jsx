@@ -51,11 +51,11 @@ const Main = () => {
               className={`bookmark-btn${bookmarked ? ' bookmarked' : ''}`}
               onClick={() => setBookmarked(!bookmarked)}
             >
-              <div className="bookmark-btn-icon"></div>
+              <span className="bookmark-btn-icon"></span>
               {/* <img src={BookmarkBtn} alt="" aria-label="Bookmark Button" /> */}
-              <div className="bookmark-btn-text mobile-hidden">
+              <span className="bookmark-btn-text mobile-hidden">
                 { bookmarked === true ? 'Bookmarked' : 'Bookmark' }
-              </div>
+              </span>
             </button>
           </div>  
         </div>
