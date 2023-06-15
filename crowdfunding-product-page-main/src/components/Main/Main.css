@@ -61,6 +61,7 @@
 }
 
 .bookmark-btn-icon {
+  display: block;
   width: 56px;
   height: 56px;
   background-image: url('../../assets/icon-bookmark.svg');
