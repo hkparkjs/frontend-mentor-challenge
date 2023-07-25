@@ -1,0 +1,132 @@
+@use '../../../styles' as *;
+
+.nav-bar {
+  position: absolute;
+  z-index: 39;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 200ms all ease-in-out;
+
+  &-menu {
+    @include column-flexbox;
+    color: $white;
+    padding-top: 80px;
+    font-size: 18px;
+    margin-bottom: 219px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+
+    &:last-child a {
+      border-bottom: 1px solid $grayish-blue;
+      margin-bottom: 23px;
+    }
+
+    .menu-item {
+      @include column-flexbox;
+
+      a {
+        @include flexbox;
+        width: 311px;
+        height: 67px;
+        text-align: center;
+        border-top: 1px solid $grayish-blue;
+
+        &:last-child {
+          border-bottom: 1px solid $grayish-blue;
+          margin-bottom: 23px;
+        }
+      }
+    }
+
+    button {
+      width: 310px;
+      height: 48px;
+      color: $white;
+      border: 2px solid $white;
+      border-radius: 5px;
+      font-size: 18px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+
+  .sns {
+    @include flexbox(center);
+
+    &-item {
+      @include flexbox(between);
+      width: 88px;
+    }
+  }
+
+  &.open {
+    opacity: 0.96;
+    visibility: visible;
+    min-height: 100vh;
+    background-color: $very-dark-blue;
+  }
+
+  @include responsive(T) {
+    position: relative;
+    width: auto;
+    min-height: auto;
+    top: auto;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+
+    &-menu {
+      flex-direction: row;
+      color: $very-dark-blue;
+      font-size: 12px;
+      padding-top: 0;
+      margin-bottom: 0;
+
+      .menu-item {
+        flex-direction: row;
+        width: 300px;
+        height: 40px;
+        margin-right: 30px;
+
+        a {
+          border-top: 0;
+          transition: color 200ms ease-in-out;
+
+          &:last-child {
+            border-bottom: 0;
+            margin-bottom: 0;
+          }
+
+          &:hover {
+            color: $soft-red;
+          }
+        }
+      }
+
+      button {
+        width: 111px;
+        height: 40px;
+        font-size: 12px;
+        background-color: $soft-red;
+        transition: all 100ms ease-in-out;
+
+        &:hover {
+          background-color: $white;
+          color: $soft-red;
+          outline: 2px solid $soft-red;
+        }
+      }
+    }
+
+    .sns {
+      display: none;
+    }
+  }
+}

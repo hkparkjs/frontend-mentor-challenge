@@ -1,0 +1,77 @@
+@use '../../../styles/index' as *;
+
+.title {
+  @include column-flexbox;
+
+  &-image {
+    @include flexbox;
+    width: 100%;
+    margin-bottom: 83px;
+    overflow: hidden;
+
+    &-container {
+      @include flexbox;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 4000px;
+        height: 200px;
+        border-radius: 300px;
+        left: 61px;
+        bottom: 0px;
+        background-color: $soft-blue;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    padding: 0 27px;
+  }
+
+  .btn-get {
+    @include flexbox;
+    margin-bottom: 135px;
+  }
+
+  @include responsive(T) {
+    width: 85%;
+    flex-direction: row-reverse;
+
+    &-desc {
+      margin-right: 50px;
+
+      p {
+        width: 424px;
+        padding: 0;
+        text-align: start;
+      }
+
+      .btn-get {
+        justify-content: flex-start;
+      }
+    }
+
+    &-image {
+      justify-content: flex-end;
+      overflow: inherit;
+
+      &-container {
+        &::after {
+          height: 77%;
+          left: 25%;
+        }
+      }
+    }
+  }
+}

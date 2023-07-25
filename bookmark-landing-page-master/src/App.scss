@@ -1,0 +1,6 @@
+@use 'styles/index' as *;
+
+#root {
+  position: relative;
+  @include column-flexbox;
+}

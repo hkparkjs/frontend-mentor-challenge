@@ -1,0 +1,166 @@
+@use '../../../styles/index' as *;
+
+.features {
+  @include column-flexbox;
+  width: 100%;
+  padding: 0 26px;
+  margin-bottom: 100px;
+
+  h2 {
+    color: $very-dark-blue;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 38px;
+  }
+
+  &-list {
+    @include column-flexbox;
+    width: 100%;
+    margin-bottom: 62px;
+
+    &-item {
+      @include column-flexbox;
+      position: relative;
+      width: 100%;
+      height: 54px;
+      border-top: 1px solid $border;
+      font-family: $font-main;
+      font-size: 16px;
+      color: $tertiary;
+      font-weight: 500;
+      transition: color 200ms ease-in-out;
+
+      &:last-child {
+        border-bottom: 1px solid $border;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 123px;
+        height: 3px;
+        background-color: $soft-red;
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 200ms ease-in-out;
+      }
+
+      &[aria-selected='true'] {
+        color: $very-dark-blue;
+
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  &-desc {
+    &-image {
+      position: relative;
+      margin-bottom: 73px;
+
+      &-container {
+        img {
+          width: 100%;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          width: 4000px;
+          height: 98%;
+          border-radius: 300px;
+          bottom: -32px;
+          left: -3718px;
+          background-color: hsl(231, 69%, 60%);
+        }
+      }
+    }
+
+    &-text {
+      @include column-flexbox;
+      color: $very-dark-blue;
+    }
+
+    button {
+      display: none;
+    }
+  }
+
+  @include responsive(T) {
+    margin-bottom: 180px;
+
+    &-list {
+      flex-direction: row;
+      border: 0;
+      margin-bottom: 72px;
+
+      button {
+        width: 243px;
+        font-weight: 400;
+        padding: 30px 42px;
+      }
+
+      &-item {
+        border-top: 0;
+        border-bottom: 1px solid $border;
+
+        &::after {
+          width: 243px;
+        }
+
+        &:hover {
+          color: $soft-red;
+        }
+      }
+    }
+
+    &-desc {
+      &-image {
+        @include flexbox;
+        margin-right: 50px;
+        margin-bottom: 0;
+
+        &-container {
+          @include flexbox;
+          position: relative;
+          width: 100%;
+          margin-bottom: 0;
+
+          &::after {
+            position: absolute;
+            content: '';
+            height: 93%;
+            left: unset;
+            right: 14%;
+            bottom: -63px;
+            background-color: hsl(231, 69%, 60%);
+          }
+        }
+      }
+
+      &-text {
+        @include column-flexbox(center, start);
+        width: 41%;
+
+        p {
+          width: 428px;
+          text-align: start;
+        }
+      }
+
+      button {
+        display: block;
+      }
+
+      &[aria-expanded='true'] {
+        @include flexbox(evenly);
+      }
+    }
+  }
+}

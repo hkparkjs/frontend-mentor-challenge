@@ -1,0 +1,135 @@
+@use '../../../styles/index' as *;
+
+.subscribe {
+  @include column-flexbox;
+  width: 100%;
+  padding: 62px 26px 0 26px;
+  background-color: $soft-blue;
+
+  span {
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    color: $white;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  form {
+    width: 100%;
+
+    .email-input-area {
+      position: relative;
+      width: 100%;
+      transition: all 100ms ease-in-out;
+
+      .err-icon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 100ms ease-in-out;
+      }
+
+      .err-msg span {
+        width: 100%;
+        letter-spacing: 0;
+        text-transform: none;
+        font-size: 11px;
+        font-style: italic;
+        height: 23px;
+        margin-top: 0;
+        padding-left: 4px;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      &.is-error {
+        background-color: $soft-red;
+        border-radius: 4px;
+        margin-bottom: 19px;
+        border: 2px solid $soft-red;
+
+        .err-icon {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        .err-msg {
+          height: 20px;
+        }
+
+        .err-msg span {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      input {
+        width: 100%;
+        background-color: $white;
+        height: 42px;
+        border-radius: 4px;
+        padding-left: 20px;
+        font-family: $font-main;
+        color: $grayish-blue;
+        font-weight: 500;
+        font-size: 14px;
+
+        &::placeholder {
+          color: $grayish-blue;
+        }
+
+        // &:invalid {
+        //   border: 2px solid $soft-red;
+        // }
+      }
+    }
+
+    button {
+      width: 100%;
+      margin-bottom: 52px;
+    }
+  }
+
+  @include responsive(T) {
+    h2 {
+      width: 400px;
+      margin-bottom: 38px;
+    }
+
+    form {
+      @include flexbox(center, start);
+      margin-bottom: 56px;
+
+      .email-input-area {
+        width: 300px;
+        margin-right: 16px;
+
+        .err-icon {
+          top: 13px;
+        }
+
+        &.is-error {
+          margin-bottom: 0;
+        }
+
+        input {
+          height: 48px;
+        }
+      }
+
+      button {
+        width: auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

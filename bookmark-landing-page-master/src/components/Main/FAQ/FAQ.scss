@@ -1,0 +1,33 @@
+@use '../../../styles/index' as *;
+
+.faq {
+  @include column-flexbox;
+  width: 100%;
+  padding: 0 26px;
+  margin-bottom: 100px;
+
+  h2 {
+    color: $very-dark-blue;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 38px;
+  }
+
+  &-list {
+    width: 100%;
+    margin-bottom: 43px;
+  }
+
+  .btn-blue {
+    padding: 0 20px;
+  }
+
+  @include responsive(T) {
+    .btn-blue {
+      padding: 0 25px;
+    }
+  }
+}

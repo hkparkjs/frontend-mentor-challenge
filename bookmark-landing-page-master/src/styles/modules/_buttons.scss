@@ -1,0 +1,57 @@
+@use '../../styles/index' as *;
+
+%btn-base {
+  @include inline-flexbox;
+  padding: 0 15px;
+  height: 48px;
+  font-weight: 500;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-right: 10px;
+  box-shadow: $soft-blue 0px 4px 14px -10px;
+  transition: all 100ms ease-in-out;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include responsive(T) {
+    padding: 0 25px;
+  }
+}
+
+.btn-blue {
+  @extend %btn-base;
+  color: $white;
+  background-color: $soft-blue;
+
+  &:hover {
+    background-color: $white;
+    outline: 2px solid $soft-blue;
+    color: $soft-blue;
+  }
+}
+
+.btn-gray {
+  @extend %btn-base;
+  color: $very-dark-blue;
+  background-color: $gray-btn-bg;
+
+  &:hover {
+    background-color: $white;
+    outline: 2px solid $tertiary;
+    color: $tertiary;
+  }
+}
+
+.btn-red {
+  @extend %btn-base;
+  color: $white;
+  background-color: $soft-red;
+
+  &:hover {
+    background-color: $white;
+    outline: 2px solid $soft-red;
+    color: $soft-red;
+  }
+}

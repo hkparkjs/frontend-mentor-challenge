@@ -1,0 +1,81 @@
+@use '../../styles/index' as *;
+
+footer {
+  @include column-flexbox;
+  width: 100%;
+  background-color: $very-dark-blue;
+
+  .footer-logo {
+    padding: 32px 0;
+  }
+
+  .menu-item {
+    @include column-flexbox;
+
+    a {
+      @include flexbox;
+      height: 58px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+      letter-spacing: 2px;
+
+      &:last-child {
+        margin-bottom: 23px;
+      }
+    }
+  }
+
+  .sns {
+    @include flexbox(center);
+    padding-bottom: 37px;
+
+    &-item {
+      @include flexbox(between);
+      width: 88px;
+      font-size: 24px;
+      color: $white;
+    }
+  }
+
+  @include responsive(T) {
+    flex-direction: row;
+
+    .footer-logo {
+      margin-right: 66px;
+    }
+
+    .menu-item {
+      flex-direction: row;
+      margin-right: 516px;
+
+      a {
+        margin-right: 49px;
+        transition: color 200ms ease-in-out;
+
+        &:hover {
+          color: $soft-red;
+        }
+
+        &:last-child {
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .sns {
+      padding-bottom: 0;
+
+      &-item {
+        a {
+          transition: color 200ms ease-in-out;
+
+          &:hover {
+            color: $soft-red;
+          }
+        }
+      }
+    }
+  }
+}

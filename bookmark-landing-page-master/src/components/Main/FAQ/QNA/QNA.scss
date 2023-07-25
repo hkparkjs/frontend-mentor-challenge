@@ -1,0 +1,74 @@
+@use '../../../../styles/index' as *;
+.qna {
+  border-top: 1px solid $border;
+
+  &:last-child {
+    border-bottom: 1px solid $border;
+  }
+
+  .question {
+    @include flexbox(between);
+    width: 100%;
+    height: 57px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $very-dark-blue;
+    padding: 0;
+
+    .fa-sharp {
+      transform: rotate(0deg);
+      transition: transform 200ms ease-in-out;
+      color: $soft-blue;
+    }
+  }
+
+  .answer {
+    width: 96%;
+    height: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    color: $tertiary;
+    transition: all 200ms ease-in-out;
+
+    span {
+      display: none;
+    }
+  }
+
+  &.is-open {
+    .question {
+      .fa-sharp {
+        transform: rotate(180deg);
+        color: $soft-red;
+      }
+    }
+
+    .answer {
+      height: 100%;
+      padding: 27px 0;
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  @include responsive(T) {
+    width: 540px;
+    margin: 0 auto;
+
+    .question {
+      font-weight: 400;
+      transition: color 200ms ease-in-out;
+
+      &:hover {
+        color: $soft-red;
+      }
+    }
+
+    .answer {
+      font-weight: 400;
+    }
+  }
+}
