@@ -6,8 +6,12 @@ function Footer() {
   return (
     <footer>
       <div className="footer-container">
-        <a href="#" className="footer-logo">
-          <img src={Logo} alt="" />
+        <a
+          href="#"
+          className="footer-logo"
+          aria-label="Footer logo link for going home"
+        >
+          <img src={Logo} alt="footer logo" />
         </a>
         <div className="menu-item">
           <a href="/">Features</a>
@@ -18,10 +22,10 @@ function Footer() {
       <div className="sns">
         <div className="sns-item">
           <a href="#">
-            <i class="ic-facebook" aria-label="share to facebook"></i>
+            <i class="ic-facebook" title="share to facebook"></i>
           </a>
           <a href="#">
-            <i class="ic-twitter" aria-label="share to twitter"></i>
+            <i class="ic-twitter" title="share to twitter"></i>
           </a>
         </div>
       </div>
