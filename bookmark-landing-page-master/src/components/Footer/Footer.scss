@@ -42,8 +42,7 @@ footer {
   }
 
   @include responsive(T) {
-    @include flexbox(between);
-    padding: 0 100px;
+    @include flexbox(around);
 
     .footer-container {
       flex-direction: row;

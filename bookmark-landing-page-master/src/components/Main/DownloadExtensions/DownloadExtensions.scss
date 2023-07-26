@@ -52,7 +52,7 @@
     }
   }
 
-  @include responsive(T) {
+  @include responsive(D) {
     margin-bottom: 163px;
 
     .browser-list {

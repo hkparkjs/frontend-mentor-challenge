@@ -149,7 +149,8 @@
         width: 41%;
 
         p {
-          width: 428px;
+          width: 100%;
+          max-width: 428px;
           text-align: start;
         }
       }
