@@ -13,9 +13,7 @@ function QNA({ qna }) {
         }}
       >
         <span>{qna.question}</span>
-        <div>
-          <i className="fa-sharp fa-solid fa-chevron-down fa-rotate-180 fa-xl"></i>
-        </div>
+        <i className="fa-sharp fa-solid fa-chevron-down fa-rotate-180 fa-xl"></i>
       </button>
       <div className="answer">
         <span>{qna.answer}</span>
