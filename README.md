@@ -19,3 +19,4 @@ This is the list of my frontend mentor challenge results.
 - [Intro Section with dropdown navigation Page (2023.2.15 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/intro-section-with-dropdown-navigation-main)
 - [Sunnyside agency landing page (2023.5.23 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/sunnyside-agency-landing-page-main)
 - [Crowdfunding product page (2023.6.15 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/crowdfunding-product-page-main)
+- [Bookmark landing page (2023.7.26 finished)](https://github.com/hkparkjs/frontend-mentor-challenge/tree/main/bookmark-landing-page-master)
