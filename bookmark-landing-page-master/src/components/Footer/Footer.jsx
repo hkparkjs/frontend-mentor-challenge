@@ -5,13 +5,15 @@ import './Footer.scss';
 function Footer() {
   return (
     <footer>
-      <a href="#" className="footer-logo">
-        <img src={Logo} alt="" />
-      </a>
-      <div className="menu-item">
-        <a href="/">Features</a>
-        <a href="/">Pricing</a>
-        <a href="/">Contact</a>
+      <div className="footer-container">
+        <a href="#" className="footer-logo">
+          <img src={Logo} alt="" />
+        </a>
+        <div className="menu-item">
+          <a href="/">Features</a>
+          <a href="/">Pricing</a>
+          <a href="/">Contact</a>
+        </div>
       </div>
       <div className="sns">
         <div className="sns-item">

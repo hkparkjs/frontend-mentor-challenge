@@ -1,27 +1,30 @@
 @use '../../styles/index' as *;
 
 footer {
-  @include column-flexbox;
   width: 100%;
   background-color: $very-dark-blue;
 
-  .footer-logo {
-    padding: 32px 0;
-  }
-
-  .menu-item {
+  .footer-container {
     @include column-flexbox;
 
-    a {
-      @include flexbox;
-      height: 58px;
-      text-align: center;
-      text-transform: uppercase;
-      color: $white;
-      letter-spacing: 2px;
+    .footer-logo {
+      padding: 32px 0;
+    }
 
-      &:last-child {
-        margin-bottom: 23px;
+    .menu-item {
+      @include column-flexbox;
+
+      a {
+        @include flexbox;
+        height: 58px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 2px;
+
+        &:last-child {
+          margin-bottom: 23px;
+        }
       }
     }
   }
@@ -39,27 +42,32 @@ footer {
   }
 
   @include responsive(T) {
-    flex-direction: row;
+    @include flexbox(between);
+    padding: 0 100px;
 
-    .footer-logo {
-      margin-right: 66px;
-    }
-
-    .menu-item {
+    .footer-container {
       flex-direction: row;
-      margin-right: 516px;
 
-      a {
-        margin-right: 49px;
-        transition: color 200ms ease-in-out;
+      .footer-logo {
+        margin-right: 66px;
+      }
 
-        &:hover {
-          color: $soft-red;
-        }
+      .menu-item {
+        flex-direction: row;
+        margin-right: 66px;
 
-        &:last-child {
-          margin-right: 0;
-          margin-bottom: 0;
+        a {
+          margin-right: 49px;
+          transition: color 200ms ease-in-out;
+
+          &:hover {
+            color: $soft-red;
+          }
+
+          &:last-child {
+            margin-right: 0;
+            margin-bottom: 0;
+          }
         }
       }
     }
